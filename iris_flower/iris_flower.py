@@ -21,29 +21,27 @@ dataset = pandas.read_csv(url, names=names)
 
 #shape
 # print(dataset.shape)
-# plt.show()
 
 #head
 # print(dataset.head(20))
-# plt.show()
 
 #descriptions
 # print(dataset.describe())
-# plt.show()
 
 # class distribution
 # print(dataset.groupby('class').size())
-# plt.show()
 
 # box and whisker plots
 # dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+# plt.show()
 
 # histograms
 # dataset.hist()
 # plt.show()
 
 # scatter plot matrix
-# scatter_matrix(dataset)
+scatter_matrix(dataset)
+plt.show()
 
 # Split-out validation dataset
 array = dataset.values
